@@ -10,3 +10,4 @@ public interface Category extends Domain {
 
 	void setDescription(String description);
 }
+/*hai*/
