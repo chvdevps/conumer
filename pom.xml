@@ -33,5 +33,5 @@
 		</plugin>	
 	</plugins>
   
-</build> <!-- this is commeent line-->
+</build> 
 </project>
