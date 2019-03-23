@@ -25,5 +25,11 @@ pipeline {
                 sh 'mvn test'
                   }
            }
+        stage('Deploying')
+          {
+            steps {
+                sh 'mvn deploy'
+                  }
+           }
 }
 }
