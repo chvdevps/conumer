@@ -12,6 +12,18 @@ pipeline {
                   }
            }
     
+        stage('Code Review')
+          {
+            steps {
+                sh 'mvn -P metrics pmd:pmd'
+                  }
+           }
         
-    }
+    stage('Testing')
+          {
+            steps {
+                sh 'mvn test'
+                  }
+           }
+}
 }
